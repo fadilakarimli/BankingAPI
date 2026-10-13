@@ -1,0 +1,15 @@
+bin/
+obj/
+.dotnet/
+.dotnet-home/
+.templateengine/
+.nuget/
+.vs/
+.vscode/
+*.user
+*.suo
+appsettings.Local.json
+appsettings.Production.json
+*.db
+*.db-shm
+*.db-wal

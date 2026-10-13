@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OnlineBanking.Api/OnlineBanking.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/OnlineBanking.BuildingBlocks/OnlineBanking.BuildingBlocks.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Accounts/">
+    <Project Path="src/Modules/Accounts/OnlineBanking.Modules.Accounts.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Admin/">
+    <Project Path="src/Modules/Admin/OnlineBanking.Modules.Admin.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Identity/">
+    <Project Path="src/Modules/Identity/OnlineBanking.Modules.Identity.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Loans/">
+    <Project Path="src/Modules/Loans/OnlineBanking.Modules.Loans.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Notifications/">
+    <Project Path="src/Modules/Notifications/OnlineBanking.Modules.Notifications.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Transactions/">
+    <Project Path="src/Modules/Transactions/OnlineBanking.Modules.Transactions.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Users/">
+    <Project Path="src/Modules/Users/OnlineBanking.Modules.Users.csproj" />
+  </Folder>
+</Solution>
