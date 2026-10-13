@@ -83,6 +83,8 @@ public sealed class Account
         Balance += amount;
     }
 
+    public void SetFrozen(bool frozen) => IsFrozen = frozen;
+
     public void RegisterTransfer(decimal amount)
     {
         var today = DateOnly.FromDateTime(DateTime.UtcNow);

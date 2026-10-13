@@ -5,6 +5,7 @@ using OnlineBanking.Modules.Accounts;
 using OnlineBanking.Modules.Transactions;
 using OnlineBanking.Modules.Notifications;
 using OnlineBanking.Modules.Loans;
+using OnlineBanking.Modules.Admin;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -22,6 +23,7 @@ builder.Services.AddAccountsModule(builder.Configuration);
 builder.Services.AddTransactionsModule(builder.Configuration);
 builder.Services.AddNotificationsModule(builder.Configuration);
 builder.Services.AddLoansModule(builder.Configuration);
+builder.Services.AddAdminModule();
 var jwtOptions = builder.Configuration.GetSection(JwtOptions.SectionName).Get<JwtOptions>()
     ?? throw new InvalidOperationException("JWT configuration is missing.");
 
@@ -103,6 +105,7 @@ app.MapAccountsEndpoints();
 app.MapTransactionsEndpoints();
 app.MapNotificationsEndpoints();
 app.MapLoansEndpoints();
+app.MapAdminEndpoints();
 app.MapHealthChecks("/health");
 
 app.Run();

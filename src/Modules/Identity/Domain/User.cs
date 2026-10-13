@@ -32,4 +32,5 @@ public sealed class User
     public DateTimeOffset CreatedAtUtc { get; private set; }
 
     public void SetPasswordHash(string passwordHash) => PasswordHash = passwordHash;
+    public void SetBlocked(bool blocked) => IsBlocked = blocked;
 }
