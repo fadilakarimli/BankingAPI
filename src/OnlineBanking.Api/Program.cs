@@ -6,6 +6,7 @@ using OnlineBanking.Modules.Transactions;
 using OnlineBanking.Modules.Notifications;
 using OnlineBanking.Modules.Loans;
 using OnlineBanking.Modules.Admin;
+using OnlineBanking.Api.Infrastructure;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -86,6 +87,11 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    await app.Services.InitializeAsync();
+}
 
 if (app.Environment.IsDevelopment())
 {
